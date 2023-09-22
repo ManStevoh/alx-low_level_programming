@@ -1,0 +1,1 @@
+mor strings and pointers
