@@ -1,6 +1,6 @@
 /*
  * File: 0-print_list.c
- * Author: [Your Name]
+ * Author: Stephen Musyoka 
  * Description: A function to print the elements of a singly linked list.
  */
 
