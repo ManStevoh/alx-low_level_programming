@@ -1,22 +1,20 @@
-include "lists.h"
+#include "lists.h"
 
 /**
- *data structures
- * lists_count - Returns the number of nodes in a linked list.
- * @head: A pointer to the head of the linked list.
- *Autho Stephen musyoka
+ * listint_len - Returns the number of elements in a linked list.
+ * @h: A pointer to the head of the linked list.
+ *
  * Return: The number of nodes in the linked list.
  */
-
-size_t lists_count(const listint_t *head)
+size_t listint_len(const listint_t *h)
 {
-    size_t count = 0;
+    size_t num = 0;
 
-    while (head)
+    while (h)
     {
-        count++;
-        head = head->next;
+        num++;
+        h = h->next;
     }
 
-    return count;
+    return (num);
 }
