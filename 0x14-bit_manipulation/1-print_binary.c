@@ -7,7 +7,7 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int temp_memory_alloc;
+	unsigned long int temp_mem;
 	int shifts_bit;
 
 	if (n == 0)
@@ -16,7 +16,8 @@ void print_binary(unsigned long int n)
 		return;
 	}
 
-	for (temp_memory_alloc = n, shifts_bit = 0; (temp_memory_alloc >>= 1) > 0; shifts_bit++;
+	for (temp_mem = n, shifts_bit = 0; (temp_mem >>= 1) > 0; shifts_bit++)
+		;
 
 	for (; shifts_bit >= 0; shifts_bit--)
 	{
