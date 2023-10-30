@@ -22,12 +22,12 @@ int create_file(const char *filename, char *text_content)
 	}
 
 	of = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
-	wf = write(of, text_content, len);
+	wf = write(of, text_content, lenth_memo);
 
-	if (of == -1 || w == -1)
+	if (of == -1 || wf == -1)
 		return (-1);
 
-	close(o);
+	close(of);
 
 	return (1);
 }
